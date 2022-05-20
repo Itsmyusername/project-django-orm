@@ -14,15 +14,17 @@ pip3 install -r requirements.txt
 ```python
 python manage.py runserver youserver:port
 ```
+
 Создайте следующие переменные окружения:
+```
 DB_HOST - хост БД
 DB_PORT - порт БД
 DB_NAME - имя БД
 DB_USER - имя пользователя БД
 DB_PASSWORD - пароль пользователя БД
 SECERT_KEY - секретный ключ
-
-Пример: DATABASE_URL=postgres://DB_USER:DB_PASSWORD@DB_HOST:DB_PORT/DB_NAME
+```
+Пример: ```DATABASE_URL=postgres://DB_USER:DB_PASSWORD@DB_HOST:DB_PORT/DB_NAME```
 
 
 DEBUG - True для включения режима отладки, False - для отключения
