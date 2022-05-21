@@ -4,16 +4,14 @@ from dotenv import load_dotenv
 import dj_database_url
 
 
+
+env = Env()
 load_dotenv()
 DATABASES = {'default': dj_database_url.config()}
-
 INSTALLED_APPS = ['datacenter']
-
 SECERT_KEY=os.environ.get('SECRET_KEY')
-
-DEBUG = os.environ.get('DEBUG')
-ALLOWED_HOSTS=os.environ.get('ALLOWED_HOSTS')
-
+DEBUG = env.bool('DEBUG')
+ALLOWED_HOSTS = env.list('ALLOWED_HOSTS')
 ROOT_URLCONF = 'project.urls'
 
 

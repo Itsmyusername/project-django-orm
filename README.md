@@ -10,10 +10,6 @@
 ```python
 pip3 install -r requirements.txt
 ```
-Затем:
-```python
-python manage.py runserver youserver:port
-```
 
 Создайте следующие переменные окружения:
 ```
@@ -26,6 +22,10 @@ SECERT_KEY - секретный ключ
 ```
 Пример: ```DATABASE_URL=postgres://DB_USER:DB_PASSWORD@DB_HOST:DB_PORT/DB_NAME```
 
+Затем:
+```python
+python manage.py runserver youserver:port
+```
 
 DEBUG - True для включения режима отладки, False - для отключения
 ALLOWED_HOSTS - доступный хост для сайта.
