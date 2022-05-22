@@ -6,7 +6,6 @@ import dj_database_url
 
 
 env = Env()
-load_dotenv()
 DATABASES = {'default': dj_database_url.config()}
 INSTALLED_APPS = ['datacenter']
 SECERT_KEY=os.environ.get('SECRET_KEY')
