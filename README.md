@@ -11,15 +11,7 @@
 pip3 install -r requirements.txt
 ```
 
-Создайте следующие переменные окружения:
-```
-DB_HOST - хост БД
-DB_PORT - порт БД
-DB_NAME - имя БД
-DB_USER - имя пользователя БД
-DB_PASSWORD - пароль пользователя БД
-SECERT_KEY - секретный ключ
-```
+Создайте следующие переменные окружения согласно шаблона:
 Пример: ```DATABASE_URL=postgres://DB_USER:DB_PASSWORD@DB_HOST:DB_PORT/DB_NAME```
 
 Затем:
